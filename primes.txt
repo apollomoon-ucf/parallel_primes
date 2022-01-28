@@ -1,5 +1,5 @@
 Prime Count: 5761455
-Execution Time (Single Thread): 770ms
+Execution Time (Single Thread): 766ms
 Sum of Primes: 279209790387276
 Top Ten Primes:
 99999787
@@ -16,7 +16,7 @@ Top Ten Primes:
 
 
 Prime Count: 5761455
-Execution Time (8 Threads): 589ms
+Execution Time (8 Threads): 538ms
 Sum of Primes: 279209790387276
 Top Ten Primes:
 99999787
