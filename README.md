@@ -10,6 +10,7 @@ COP4520
 ## Instructions
 
 Build Program: javac PARALLEL_PRIMES.java
+
 Run Program And Output To File: java PARALLEL_PRIMES > primes.txt
 
 ## Program Summary
