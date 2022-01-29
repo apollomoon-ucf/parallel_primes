@@ -10,9 +10,11 @@ UCF
 
 ## Instructions
 
-Build Program: javac PARALLEL_PRIMES.java
+Build Program:
+> javac PARALLEL_PRIMES.java
 
-Run Program And Output To File: java PARALLEL_PRIMES > primes.txt
+Run Program And Output To File:
+> java PARALLEL_PRIMES > primes.txt
 
 ## Program Summary
 
