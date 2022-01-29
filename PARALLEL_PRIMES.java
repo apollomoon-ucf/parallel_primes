@@ -93,9 +93,9 @@ public class PARALLEL_PRIMES extends Thread {
         }
       }
     }
-    System.out.println("8 Thread Solution:");
+    System.out.println("\n\n\n8 Thread Solution:");
     // print number of primes found and sum
-    System.out.println("\n\n\nPrime Count: " + numberOfPrimesFound);
+    System.out.println("Prime Count: " + numberOfPrimesFound);
     // get end time for parrallel processing to find primes
     endTime = System.currentTimeMillis();
     System.out.println("Execution Time (8 Threads): " + (endTime - startTime) + "ms");    
