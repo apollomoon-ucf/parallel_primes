@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
 public class PARALLEL_PRIMES extends Thread {
   // member variables
   static PriorityQueue<Integer> priority_queue = new PriorityQueue<Integer>();
-  static boolean[] primes = new boolean[100000000];
+  static boolean[] not_primes = new boolean[100000000];
   public static int numberOfPrimesFound = 1;
   public static int sharedIndex = 2;
   public static long sum = 2;
@@ -34,8 +34,8 @@ public class PARALLEL_PRIMES extends Thread {
     }
 
     // total found primes and sum, and get largest items
-    for (int bool = 3, num = 0; bool < primes.length; ++bool) {
-      if (primes[bool] == false) {
+    for (int bool = 3, num = 0; bool < not_primes.length; ++bool) {
+      if (not_primes[bool] == false) {
         ++numberOfPrimesFound;
         sum += bool;
         priority_queue.add(bool);
@@ -60,7 +60,7 @@ public class PARALLEL_PRIMES extends Thread {
     }
 
     // 8 Thread Solution
-    primes = new boolean[100000000];
+    not_primes = new boolean[100000000];
     numberOfPrimesFound = 1;
     sharedIndex = 2;
     sum = 2;
@@ -82,8 +82,8 @@ public class PARALLEL_PRIMES extends Thread {
     }
 
     // total found primes and sum, and get largest items
-    for (int bool = 3, num = 0; bool < primes.length; ++bool) {
-      if (primes[bool] == false) {
+    for (int bool = 3, num = 0; bool < not_primes.length; ++bool) {
+      if (not_primes[bool] == false) {
         ++numberOfPrimesFound;
         sum += bool;
         priority_queue.add(bool);
@@ -126,9 +126,9 @@ public class PARALLEL_PRIMES extends Thread {
   public void numberOfPrimes(int n) {
     int num = getAndIncrementNumber();
     for (int i = num; i <= Math.sqrt(n); i = getAndIncrementNumber()) {
-      if (primes[i] == false) {
+      if (not_primes[i] == false) {
         for (int j = i * i; j < n; j += i) {
-          primes[j] = true;
+          not_primes[j] = true;
         }
       } 
     }

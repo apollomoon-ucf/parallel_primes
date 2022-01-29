@@ -6,6 +6,7 @@ Programming Assignment 1
 Parallel Primes
 Brian Moon
 COP4520
+UCF
 
 ## Instructions
 
