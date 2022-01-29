@@ -15,7 +15,7 @@ public class PARALLEL_PRIMES extends Thread {
   
   // main method
   public static void main(String[] args) {
-    // Single Thread Solution
+    // ------- Single Thread Solution ---------- //
     // start time
     long startTime = System.currentTimeMillis();
     // number of threads
@@ -45,7 +45,7 @@ public class PARALLEL_PRIMES extends Thread {
         }
       }
     }
-
+    System.out.println("1 Thread Solution:");
     // print number of primes found and sum
     System.out.println("Prime Count: " + numberOfPrimesFound);
     // get end time for parrallel processing to find primes
@@ -59,7 +59,7 @@ public class PARALLEL_PRIMES extends Thread {
       System.out.println(priority_queue.poll());
     }
 
-    // 8 Thread Solution
+    // ------- 8 Thread Solution ---------- //
     not_primes = new boolean[100000000];
     numberOfPrimesFound = 1;
     sharedIndex = 2;
@@ -93,8 +93,7 @@ public class PARALLEL_PRIMES extends Thread {
         }
       }
     }
-
-
+    System.out.println("8 Thread Solution:");
     // print number of primes found and sum
     System.out.println("\n\n\nPrime Count: " + numberOfPrimesFound);
     // get end time for parrallel processing to find primes

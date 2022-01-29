@@ -1,5 +1,6 @@
+1 Thread Solution:
 Prime Count: 5761455
-Execution Time (Single Thread): 763ms
+Execution Time (Single Thread): 760ms
 Sum of Primes: 279209790387276
 Top Ten Primes:
 99999787
@@ -12,11 +13,12 @@ Top Ten Primes:
 99999959
 99999971
 99999989
+8 Thread Solution:
 
 
 
 Prime Count: 5761455
-Execution Time (8 Threads): 538ms
+Execution Time (8 Threads): 528ms
 Sum of Primes: 279209790387276
 Top Ten Primes:
 99999787
